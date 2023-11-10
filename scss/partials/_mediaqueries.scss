@@ -1,0 +1,41 @@
+@media (max-width: 750px ){
+  
+  .menu__nav{
+    font-size: 25px;
+    list-style: none
+  }
+  .nav{
+    
+    background-color: rgb(219, 44, 44);
+    
+  
+  }
+  .liist{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+  }
+ 
+  a:hover{
+    color: aqua;
+    transition: 0.8s;
+  }
+
+}
+  
+@media (max-width: 650px ){
+
+.carta{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+
+
+}
+
+  
+ 
+
+
+}

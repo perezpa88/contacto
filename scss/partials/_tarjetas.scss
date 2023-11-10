@@ -1,0 +1,12 @@
+.carta{
+  display: grid;
+  background-color: grey;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 1rem;
+}
+.foto{
+  width: 300px;
+  max-height: 250px;
+  border: 2px solid yellow;
+}

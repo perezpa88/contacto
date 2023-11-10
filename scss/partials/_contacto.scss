@@ -1,0 +1,53 @@
+body{
+  background-color:$fondo_2;
+  
+}
+.contacto{
+  text-align: center;
+  font-size: 2.5rem;
+  .contacto:hover{
+    transform: rotate(360deg);
+  }  
+}
+.tarjet{
+  box-shadow: 0 0 20px 0 rgba(219, 24, 24, 0.3);
+  padding: 1rem;
+  .form{
+    margin: 0;
+    padding: 2rem;
+  }  
+}
+
+input{
+  width: 100%;
+  padding: .7em;
+  border: none;
+  margin: 0.5rem;
+  background: none;
+  border-bottom: 1px solid orange;
+
+}
+
+textarea{
+  width: 100%;
+  padding: 0.7em;
+  border:currentColor;
+  margin: 0.5rem;
+  background:none;
+  border-bottom: 1px solid orange;
+
+
+}
+button{
+  background: silver;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border-radius: 15%;
+}
+
+
+
+
+
+
+
