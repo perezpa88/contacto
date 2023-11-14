@@ -1,0 +1,22 @@
+.logo{
+  transition: 2s;
+}
+.logo:hover{
+  
+  transform: rotateY(360deg);
+    
+}
+
+.menu__nav:hover{
+  color: aqua;
+  transition: 0.8s;
+}
+
+.enlace{
+  transition: 1s;
+}
+.enlace:hover{
+  
+  transform: translateX(15px);
+  color: aqua;
+}
