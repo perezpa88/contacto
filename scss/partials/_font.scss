@@ -1,12 +1,15 @@
 @import url(../fonts/dancin.ttf);
 @import url(../fonts/fuggle.ttf);
 @import url(../fonts/RockSalt.ttf);
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @font-face {
   font-family: dancin;
   src: url(../fonts/dancin.ttf);
 }
-
+@font-face{
+  font-family: 'Nunito', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+}
 @font-face {
   font-family: fuggle;
   src: url(../fonts/fuggle.ttf);

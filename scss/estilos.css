@@ -1,9 +1,14 @@
 @import url(../fonts/dancin.ttf);
 @import url(../fonts/fuggle.ttf);
 @import url(../fonts/RockSalt.ttf);
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @font-face {
   font-family: dancin;
   src: url(../fonts/dancin.ttf);
+}
+@font-face {
+  font-family: "Nunito", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 }
 @font-face {
   font-family: fuggle;
@@ -29,6 +34,10 @@ h1, h2, h4, h3 {
   color: aliceblue;
   font-family: fuggle;
   font-size: 40px;
+}
+
+p {
+  font-family: Nunito;
 }
 
 .logo {
@@ -88,18 +97,39 @@ li {
   font-size: 40px;
 }
 
+.fajita {
+  grid-area: "fajita";
+}
+
+.molde {
+  grid-area: "molde";
+}
+
+.arabe {
+  grid-area: "arabe";
+}
+
+.flauta {
+  grid-area: "flauta";
+}
+
 .carta {
   display: grid;
   background-color: grey;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas: "molde  flauta" "arabe  fajita";
   align-items: center;
   padding: 1rem;
 }
 
 .foto {
   width: 300px;
-  max-height: 250px;
+  min-height: 300px;
   border: 2px solid yellow;
+}
+
+.titulo_tarjeta {
+  padding: 1rem;
 }
 
 body {
@@ -148,8 +178,25 @@ button {
   border-radius: 15%;
 }
 
-footer {
-  background-image: -o-linear-gradient(240deg black, rgb(86, 81, 81));
+.quienes_main {
+  padding: 1rem;
+}
+
+.dato {
+  display: flex;
+}
+
+.text2 {
+  width: 40%;
+}
+
+.fotoPersonal {
+  background: rgb(0, 0, 0);
+  width: 60%;
+}
+
+.titulos_quienes {
+  align-items: center;
 }
 
 .cuerporecetas {
@@ -177,10 +224,20 @@ footer {
   justify-content: end;
 }
 .recetas p {
-  font-size: 30px;
-  font-family: dancin;
+  font-size: 20px;
   max-width: 650px;
   text-align: justify;
+  padding: 0.5rem;
+}
+
+.bloque {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.bloque li {
+  font-family: Nunito;
 }
 
 .titel {
@@ -192,7 +249,37 @@ footer {
 .info_celi {
   padding: 2rem;
   gap: 2rem;
-  justify-content: center;
+  text-align: center;
+  margin: 1rem;
+}
+
+.footers {
+  background-color: black;
+  color: aliceblue;
+  padding: 2rem;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.menu__foot {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu__footer {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 15px;
+  transition: 2s;
+}
+
+.menu__footer:hover {
+  color: red;
 }
 
 @media (max-width: 750px) {
@@ -229,5 +316,33 @@ footer {
   .cabeza {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 550px) {
+  .dato {
+    flex-direction: column;
+    justify-self: center;
+  }
+  .text2 {
+    width: 100%;
+  }
+  .bloque {
+    flex-direction: column;
+  }
+}
+@media (max-width: 380px) {
+  p {
+    font-size: 10px;
+  }
+  .liist {
+    flex-direction: column;
+    align-items: end;
+    padding: 0 1.5rem;
+  }
+  .divlogo {
+    padding: 0 1rem;
+  }
+  .cabeza {
+    align-items: center;
   }
 }/*# sourceMappingURL=estilos.css.map */

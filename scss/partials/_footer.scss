@@ -1,8 +1,34 @@
 .footers{
-  font-family: 'Courier New', Courier, monospace;
-  color: red;
+  background-color: black;
+  color: aliceblue;
+  padding: 2rem;
+  
+
+
+  
+  
+}
+a{
+  text-decoration: none;
+  outline: none;
+  
+  }
+.menu__foot{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+  
 
 }
-.foot{
-  display: flex;
+.menu__footer{
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 15px;
+  transition: 2s;
+
+
+}
+.menu__footer:hover{
+  color: red;
 }
